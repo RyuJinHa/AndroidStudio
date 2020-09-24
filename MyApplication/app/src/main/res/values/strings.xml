@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">My Application</string>
+
+
+    <string-array name="disaster_name">
+        <item>지진 발생시</item>
+        <item>쓰나미 발생시</item>
+        <item>태풍 발생시</item>
+        <item>홍수 발생시</item>
+        <item>other1</item>
+        <item>other2</item>
+        <item>other3</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+        <item>This is random description</item>
+    </string-array>
+
 </resources>
