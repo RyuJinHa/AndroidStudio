@@ -23,6 +23,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         context = ct;
         data1 = s1;
         data2 = s2;
+
         images = img;
     }
 
@@ -38,6 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.textView1.setText(data1[position]);
         holder.textView2.setText(data2[position]);
+
         holder.imageView.setImageResource(images[position]);
 
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +47,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             public void onClick(View v) {
                 Intent i = new Intent(context, SubActivity2_2.class);
                 i.putExtra("title",data1[position]);
-                i.putExtra("description",data2[position]);
+                i.putExtra("description_1",data2[position]);
+
                 i.putExtra("images",images[position]);
                 context.startActivity(i);
             }
@@ -68,6 +71,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             super(itemView);
             textView1 = itemView.findViewById(R.id.textView);
             textView2 = itemView.findViewById(R.id.textView2);
+
             imageView = itemView.findViewById(R.id.imageView);
             mainLayout = itemView.findViewById(R.id.mainLayout);
         }
