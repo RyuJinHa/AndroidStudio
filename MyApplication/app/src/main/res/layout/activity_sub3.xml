@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".SubActivity3">
 
-    <TextView
-        android:id="@+id/textView4"
+    <ImageButton
+        android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="알림이지롱"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/ic_launcher_round"
+        tools:layout_editor_absoluteY="340dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
