@@ -12,25 +12,21 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.test.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_knowhow"
         android:name="com.example.test.ui.KnowHow.KnowHowFragment"
-        android:label="@string/menu_knowhow"
+        android:label="재난 발생시 행동요령"
         tools:layout="@layout/fragment_knowhow" />
     <fragment
         android:id="@+id/nav_alarm"
         android:name="com.example.test.ui.alarm.AlarmFragment"
-        android:label="@string/menu_alarm"
+        android:label="소리 알람"
         tools:layout="@layout/fragment_alarm" />
 
     <fragment
         android:id="@+id/nav_calling"
         android:name="com.example.test.ui.calling.CallingFragment"
-        android:label="@string/menu_calling"
-        tools:layout="@layout/fragmnet_calling" />
+        android:label="긴급 전화"
+        tools:layout="@layout/fragment_calling" />
+
+
 </navigation>
